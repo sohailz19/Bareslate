@@ -43,7 +43,7 @@ class _RegisterState extends State<Register> {
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30),
                     ),
-                    color: Colors.orange[400],
+                    color: Colors.orange[500],
                     boxShadow: [
                       BoxShadow(
                         color: Colors.white,
@@ -58,10 +58,10 @@ class _RegisterState extends State<Register> {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(
-                          top: 20.0,
+                          top: 25.0,
                         ),
                         child: Text(
-                          "Welcome To Bareslate",
+                          "Welcome To BARESLATE",
                           style: TextStyle(fontSize: 20),
                         ),
                       ),
@@ -80,11 +80,11 @@ class _RegisterState extends State<Register> {
                                 // icon: Icon(Icons.mail),
                                 border: OutlineInputBorder(
                                   borderRadius: const BorderRadius.all(
-                                    const Radius.circular(14.0),
+                                    const Radius.circular(18.0),
                                   ),
                                 ),
                                 filled: true,
-                                hintStyle: TextStyle(color: Colors.black),
+                                hintStyle: TextStyle(color: Colors.grey[500]),
                                 hintText: "First Name",
                                 // prefixIcon: Icon(Icons.mail),
                                 // suffixIcon: Icon(Icons.mail),
@@ -107,11 +107,11 @@ class _RegisterState extends State<Register> {
                                 // icon: Icon(Icons.mail),
                                 border: OutlineInputBorder(
                                   borderRadius: const BorderRadius.all(
-                                    const Radius.circular(14.0),
+                                    const Radius.circular(18.0),
                                   ),
                                 ),
                                 filled: true,
-                                hintStyle: TextStyle(color: Colors.black),
+                                hintStyle: TextStyle(color: Colors.grey[500]),
                                 hintText: "Last Name",
                                 // prefixIcon: Icon(Icons.mail),
                                 // suffixIcon: Icon(Icons.mail),
@@ -125,6 +125,7 @@ class _RegisterState extends State<Register> {
                         child: Container(
                           height: 55,
                           child: TextField(
+                            keyboardType: TextInputType.number,
                             //  cursorColor: Colors.white,
                             style: TextStyle(
                                 fontSize: 17,
@@ -134,11 +135,11 @@ class _RegisterState extends State<Register> {
                                 // icon: Icon(Icons.mail),
                                 border: OutlineInputBorder(
                                   borderRadius: const BorderRadius.all(
-                                    const Radius.circular(14.0),
+                                    const Radius.circular(18.0),
                                   ),
                                 ),
                                 filled: true,
-                                hintStyle: TextStyle(color: Colors.black),
+                                hintStyle: TextStyle(color: Colors.grey[500]),
                                 hintText: "Mobile No",
                                 // prefixIcon: Icon(Icons.mail),
                                 // suffixIcon: Icon(Icons.mail),
@@ -160,7 +161,7 @@ class _RegisterState extends State<Register> {
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
                                 borderRadius: const BorderRadius.all(
-                                  const Radius.circular(14.0),
+                                  const Radius.circular(18.0),
                                 ),
                               ),
                               filled: true,
@@ -170,7 +171,7 @@ class _RegisterState extends State<Register> {
                                   _passwordVisible
                                       ? Icons.visibility
                                       : Icons.visibility_off,
-                                  color: Colors.black,
+                                  color: Colors.grey[700],
                                 ),
                                 onPressed: () {
                                   // Update the state i.e. toogle the state of passwordVisible variable
@@ -179,14 +180,15 @@ class _RegisterState extends State<Register> {
                                   });
                                 },
                               ),
-                              hintStyle: TextStyle(color: Colors.black),
+                              hintStyle: TextStyle(color: Colors.grey[500]),
                               hintText: "Password",
+                              
                               fillColor: Colors.white,
                             ),
                           ),
                         ),
                       ),
-                      Padding(
+                      Padding(  
                         padding: EdgeInsets.only(
                             top: 10, left: 25, right: 25, bottom: 0),
                         child: Container(
@@ -200,7 +202,7 @@ class _RegisterState extends State<Register> {
                             decoration: InputDecoration(
                               border: OutlineInputBorder(
                                 borderRadius: const BorderRadius.all(
-                                  const Radius.circular(14.0),
+                                  const Radius.circular(18.0),
                                 ),
                               ),
                               filled: true,
@@ -210,7 +212,7 @@ class _RegisterState extends State<Register> {
                                   _passwordVisible1
                                       ? Icons.visibility
                                       : Icons.visibility_off,
-                                  color: Colors.black,
+                                  color: Colors.grey[700],
                                 ),
                                 onPressed: () {
                                   // Update the state i.e. toogle the state of passwordVisible variable
@@ -219,7 +221,7 @@ class _RegisterState extends State<Register> {
                                   });
                                 },
                               ),
-                              hintStyle: TextStyle(color: Colors.black),
+                              hintStyle: TextStyle(color: Colors.grey[500]),
                               hintText: "Confirm Password",
                               fillColor: Colors.white,
                             ),
@@ -240,7 +242,7 @@ class _RegisterState extends State<Register> {
                                 color: Colors.indigo[900],
                                 onPressed: () {},
                                 child: Text("Register",
-                                style: TextStyle(),),
+                                style: TextStyle(fontSize: 20),),
                                 textColor: Colors.white,
                               ),
                             )
