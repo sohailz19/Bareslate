@@ -77,7 +77,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         color: Colors.white,
       ),
       Icon(
-        FontAwesome.glass,
+        Feather.user,
         size: 25,
         color: Colors.white,
       ),
