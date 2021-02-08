@@ -16,7 +16,8 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Bareslate",
-      theme: ThemeData(primarySwatch: Colors.orange),
+      theme: ThemeData(primarySwatch: Colors.orange,
+      fontFamily: "Helvetica"),
       home: SplashScreen(), 
       
     );
