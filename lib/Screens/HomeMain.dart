@@ -1,5 +1,7 @@
 import 'dart:ui';
 
+import 'package:Bare_Slate/Screens/Grow.dart';
+import 'package:Bare_Slate/Screens/Podcust/PodcustList.dart';
 import 'package:flutter/material.dart';
 
 class HomeMain extends StatefulWidget {
@@ -160,7 +162,10 @@ class _HomeMainState extends State<HomeMain> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                        color: Color.fromRGBO(40, 124, 109, 5),
-                      onPressed: () {},
+                      onPressed: () {
+                         Navigator.push(
+          context, MaterialPageRoute(builder: (ctx) => Grow()));
+                      },
                       child: Row(
                         children: [
                           Text(
@@ -188,7 +193,7 @@ class _HomeMainState extends State<HomeMain> {
             Padding(
               padding: EdgeInsets.only(top: 5.0, left: 20.0),
               child: Text(
-                "watch & Listern",
+                "Watch & Listen",
                 style: TextStyle(
                     fontSize: 24.0,
                     color: Colors.blueGrey[900],
@@ -341,7 +346,8 @@ class _HomeMainState extends State<HomeMain> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
                        color: Color.fromRGBO(40, 124, 109, 5),
-                      onPressed: () {},
+                      onPressed: () { Navigator.push(
+          context, MaterialPageRoute(builder: (ctx) => Prodcust()));},
                       child: Row(
                         children: [
                           Text(
@@ -367,7 +373,7 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 0, left: 15.0),
+              padding: EdgeInsets.only(top: 0, left: 15.0,bottom: 20.0),
               child: Text(
                 "Learn",
                 style: TextStyle(
@@ -540,43 +546,43 @@ class _HomeMainState extends State<HomeMain> {
                 ],
               ),
             ),
-            Padding(
-              padding: EdgeInsets.only(top: 10.0, right: 20.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width * .24,
-                    height: 40,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10)),
-                       color: Color.fromRGBO(40, 124, 109, 5),
-                      onPressed: () {},
-                      child: Row(
-                        children: [
-                          Text(
-                            "More",
-                            style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.white),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 3.0),
-                            child: Icon(
-                              Icons.arrow_forward_rounded,
-                              size: 20,
-                              color: Colors.white,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
+            // Padding(
+            //   padding: EdgeInsets.only(top: 10.0, right: 20.0),
+            //   child: Row(
+            //     mainAxisAlignment: MainAxisAlignment.end,
+            //     children: [
+            //       Container(
+            //         width: MediaQuery.of(context).size.width * .24,
+            //         height: 40,
+            //         child: RaisedButton(
+            //           shape: RoundedRectangleBorder(
+            //               borderRadius: BorderRadius.circular(10)),
+            //            color: Color.fromRGBO(40, 124, 109, 5),
+            //           onPressed: () {},
+            //           child: Row(
+            //             children: [
+            //               Text(
+            //                 "More",
+            //                 style: TextStyle(
+            //                     fontSize: 16.0,
+            //                     fontWeight: FontWeight.w600,
+            //                     color: Colors.white),
+            //               ),
+            //               Padding(
+            //                 padding: const EdgeInsets.only(left: 3.0),
+            //                 child: Icon(
+            //                   Icons.arrow_forward_rounded,
+            //                   size: 20,
+            //                   color: Colors.white,
+            //                 ),
+            //               )
+            //             ],
+            //           ),
+            //         ),
+            //       )
+            //     ],
+            //   ),
+            // ),
           ],
         ),
       ),

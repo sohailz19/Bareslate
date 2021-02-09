@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:Bare_Slate/Screens/BottomNavigation.dart';
+
 class logIn extends StatefulWidget {
   @override
   _logInState createState() => _logInState();
@@ -45,7 +46,7 @@ class _logInState extends State<logIn> {
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
                 ),
-                 color: Color.fromRGBO(254, 54, 28, 3),
+                color: Color.fromRGBO(254, 54, 28, 3),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white,
@@ -68,8 +69,8 @@ class _logInState extends State<logIn> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        const EdgeInsets.only(top: 40.0, left: 25.0, right: 25.0),
+                    padding: const EdgeInsets.only(
+                        top: 40.0, left: 25.0, right: 25.0),
                     child: Container(
                       height: 55,
                       child: TextField(
@@ -95,8 +96,8 @@ class _logInState extends State<logIn> {
                     ),
                   ),
                   Padding(
-                    padding:
-                        EdgeInsets.only(top: 10, left: 25, right: 25, bottom: 0),
+                    padding: EdgeInsets.only(
+                        top: 10, left: 25, right: 25, bottom: 0),
                     child: Container(
                       height: 55,
                       child: TextField(
@@ -148,23 +149,25 @@ class _logInState extends State<logIn> {
                                 borderRadius: BorderRadius.circular(25.0)),
                             color: Color.fromRGBO(40, 124, 109, 5),
                             onPressed: () {
-                               Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => BottomNavigation()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (ctx) => BottomNavigation()));
                             },
                             child: Text(
                               "Sign In",
                               style: TextStyle(
-                                fontSize: 20.0,
-                                color: Colors.white,
-                                fontWeight: FontWeight.w700
-                              ),
+                                  fontSize: 20.0,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w700),
                             ),
                             textColor: Colors.white,
                           ),
                         )
                       ],
                     ),
-                  ),Padding(
+                  ),
+                  Padding(
                     padding: EdgeInsets.only(top: 20.0, bottom: 0.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,

@@ -26,6 +26,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     HomeMain(),
     Grow(),
     Chat(),
+    Shop(),
     Profile(),
   ];
   final HomeMain _homeMain = HomeMain();
@@ -58,11 +59,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _homeMain,
+        body: _showpage,
         bottomNavigationBar: CurvedNavigationBar(
     key: _bottomNavigationKey,
     color: Color.fromRGBO(80, 59, 102, 4),
-    backgroundColor: Color.fromRGBO(254, 54, 28, 2),
+    backgroundColor: Colors.white,
     height: 50.0,
     items: <Widget>[
       Icon(
