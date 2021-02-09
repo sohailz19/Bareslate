@@ -1,6 +1,7 @@
 import 'package:Bare_Slate/Screens/Chat.dart';
 import 'package:Bare_Slate/Screens/Grow.dart';
 import 'package:Bare_Slate/Screens/Profile.dart';
+import 'package:Bare_Slate/Screens/Shop.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'dart:io';
 import './HomeMain.dart';
@@ -30,6 +31,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
   final HomeMain _homeMain = HomeMain();
   final Grow _grow = Grow();
   final Chat _chat = Chat();
+  final Shop _shop = Shop();
   final Profile _profile = Profile();
   Widget _showpage = HomeMain();
 
@@ -44,21 +46,23 @@ class _BottomNavigationState extends State<BottomNavigation> {
       case 2:
         return _chat;
         break;
-      case 3:
+         case 3:
+        return _shop;
+        break;
+      case 4:
         return _profile;
         break;
-  
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _showpage,
+        body: _homeMain,
         bottomNavigationBar: CurvedNavigationBar(
     key: _bottomNavigationKey,
     color: Color.fromRGBO(80, 59, 102, 4),
-    backgroundColor: Colors.white,
+    backgroundColor: Color.fromRGBO(254, 54, 28, 2),
     height: 50.0,
     items: <Widget>[
       Icon(
@@ -67,7 +71,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
         color: Colors.white,
       ),
       Icon(
-        Icons.insert_chart_outlined_sharp,
+        Feather.bar_chart_2,
         color: Colors.white,
         size: 25,
       ),
@@ -76,16 +80,16 @@ class _BottomNavigationState extends State<BottomNavigation> {
         size: 25,
         color: Colors.white,
       ),
+       Icon(
+        FontAwesome.shopping_bag,
+        size: 25,
+        color: Colors.white,
+      ),
       Icon(
         Feather.user,
         size: 25,
         color: Colors.white,
       ),
-      // Icon(
-      //   Icons.supervised_user_circle,
-      //   size: 25,
-      //   color: Colors.white,
-      // ),
     ],
     animationDuration: Duration(
       milliseconds: 400,
