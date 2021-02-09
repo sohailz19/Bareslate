@@ -70,7 +70,7 @@ class _HomeMainState extends State<HomeMain> {
                         Padding(
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Text(
-                            "Daily Queto",
+                            "Daily Quote",
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -119,7 +119,7 @@ class _HomeMainState extends State<HomeMain> {
                         Padding(
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Text(
-                            "Daily Queto",
+                            "Daily Quote",
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
