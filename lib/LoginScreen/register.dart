@@ -42,7 +42,7 @@ class _RegisterState extends State<Register> {
                   bottomLeft: Radius.circular(30),
                   bottomRight: Radius.circular(30),
                 ),
-                color: Colors.orange[400],
+                color: Color.fromRGBO(254, 54, 28, 3),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.white,
@@ -236,7 +236,7 @@ class _RegisterState extends State<Register> {
                           // color: Colors.indigo,
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
-                            color: Colors.indigo[900],
+                            color: Color.fromRGBO(40, 124, 109, 5),
                             onPressed: () {
                                Navigator.push(
           context, MaterialPageRoute(builder: (ctx) => BottomNavigation()));
