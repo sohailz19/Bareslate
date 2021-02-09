@@ -54,7 +54,7 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Colors.red[600],
+                     color: Color.fromRGBO(254, 153, 3, 3),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -103,7 +103,8 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Colors.red[600],
+                        color: Color.fromRGBO(254, 153, 3, 3),
+
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -158,7 +159,7 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      color: Colors.teal,
+                       color: Color.fromRGBO(40, 124, 109, 5),
                       onPressed: () {},
                       child: Row(
                         children: [
@@ -339,7 +340,7 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      color: Colors.teal,
+                       color: Color.fromRGBO(40, 124, 109, 5),
                       onPressed: () {},
                       child: Row(
                         children: [
@@ -536,6 +537,43 @@ class _HomeMainState extends State<HomeMain> {
                       ),
                     ),
                   ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 10.0, right: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * .24,
+                    height: 40,
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10)),
+                       color: Color.fromRGBO(40, 124, 109, 5),
+                      onPressed: () {},
+                      child: Row(
+                        children: [
+                          Text(
+                            "More",
+                            style: TextStyle(
+                                fontSize: 16.0,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 3.0),
+                            child: Icon(
+                              Icons.arrow_forward_rounded,
+                              size: 20,
+                              color: Colors.white,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),
