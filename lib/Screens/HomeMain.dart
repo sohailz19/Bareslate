@@ -148,13 +148,13 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0, right: 20.0),
+              padding: EdgeInsets.only(top: 15.0, right: 20.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width * .37,
-                    height: 45,
+                    width: MediaQuery.of(context).size.width * .35,
+                    height: 40,
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -170,9 +170,10 @@ class _HomeMainState extends State<HomeMain> {
                                 color: Colors.white),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 5.0),
+                            padding: const EdgeInsets.only(left: 3.0),
                             child: Icon(
                               Icons.arrow_forward_rounded,
+                              size: 20,
                               color: Colors.white,
                             ),
                           )
@@ -184,7 +185,17 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0),
+              padding: EdgeInsets.only(top: 5.0, left: 20.0),
+              child: Text(
+                "watch & Listern",
+                style: TextStyle(
+                    fontSize: 24.0,
+                    color: Colors.blueGrey[900],
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -323,8 +334,8 @@ class _HomeMainState extends State<HomeMain> {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Container(
-                    width: MediaQuery.of(context).size.width * .26,
-                    height: 45,
+                    width: MediaQuery.of(context).size.width * .24,
+                    height: 40,
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
@@ -340,9 +351,10 @@ class _HomeMainState extends State<HomeMain> {
                                 color: Colors.white),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 7.0),
+                            padding: const EdgeInsets.only(left: 3.0),
                             child: Icon(
                               Icons.arrow_forward_rounded,
+                              size: 20,
                               color: Colors.white,
                             ),
                           )
@@ -361,6 +373,170 @@ class _HomeMainState extends State<HomeMain> {
                     fontSize: 24.0,
                     color: Colors.blueGrey[900],
                     fontWeight: FontWeight.bold),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * .30,
+                    height: 150,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * .30,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.green[500]),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(15),
+                                topRight: Radius.circular(15),
+                                bottomLeft: Radius.circular(15),
+                                bottomRight: Radius.circular(15),
+                              ),
+
+                              // color: Colors.red[600],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.white,
+                                  offset: Offset(0.0, 0.5), //(x,y)
+                                  blurRadius: 1.0,
+                                ),
+                              ],
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Container(
+                                height: 100,
+                                width: MediaQuery.of(context).size.width * .30,
+                                child: Image.asset(
+                                  "assets/image/couching.png",
+                                  // fit: BoxFit.fill
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 7.0),
+                            child: Text(
+                              "Coaching Program",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 16.0, fontWeight: FontWeight.w700),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .30,
+                    height: 150,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * .30,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.green[500]),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(15),
+                                topRight: Radius.circular(15),
+                                bottomLeft: Radius.circular(15),
+                                bottomRight: Radius.circular(15),
+                              ),
+
+                              // color: Colors.red[600],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.white,
+                                  offset: Offset(0.0, 0.5), //(x,y)
+                                  blurRadius: 1.0,
+                                ),
+                              ],
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Container(
+                                height: 100,
+                                width: MediaQuery.of(context).size.width * .30,
+                                child: Image.asset(
+                                  "assets/image/online.png",
+                                  // fit: BoxFit.fill
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 7.0),
+                            child: Text(
+                              "Online Courses",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 16.0, fontWeight: FontWeight.w700),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: MediaQuery.of(context).size.width * .30,
+                    height: 150,
+                    child: InkWell(
+                      onTap: () {},
+                      child: Column(
+                        children: [
+                          Container(
+                            width: MediaQuery.of(context).size.width * .30,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.green[500]),
+                              borderRadius: BorderRadius.only(
+                                topLeft: Radius.circular(15),
+                                topRight: Radius.circular(15),
+                                bottomLeft: Radius.circular(15),
+                                bottomRight: Radius.circular(15),
+                              ),
+
+                              // color: Colors.red[600],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.white,
+                                  offset: Offset(0.0, 0.5), //(x,y)
+                                  blurRadius: 1.0,
+                                ),
+                              ],
+                            ),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Container(
+                                height: 100,
+                                width: MediaQuery.of(context).size.width * .30,
+                                child: Image.asset(
+                                  "assets/image/time.png",
+                                  // fit: BoxFit.fill
+                                ),
+                              ),
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 7.0),
+                            child: Text(
+                              "Time Manegment",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: 16.0, fontWeight: FontWeight.w700),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

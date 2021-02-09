@@ -50,6 +50,9 @@ flutter:
   assets:
     - assets/image/logo.png
     - assets/image/homemain.jpg
+    - assets/image/time.png
+    - assets/image/couching.png
+    - assets/image/online.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
