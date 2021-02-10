@@ -1,4 +1,5 @@
 import 'package:Bare_Slate/LoginScreen/loginIn.dart';
+import 'package:Bare_Slate/Question/Mind.dart';
 import 'package:Bare_Slate/Screens/BottomNavigation.dart';
 import 'package:flutter/material.dart';
 
@@ -235,45 +236,47 @@ class _RegisterState extends State<Register> {
                           height: 50.0,
                           // color: Colors.indigo,
                           child: RaisedButton(
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(25.0)),
                             color: Color.fromRGBO(40, 124, 109, 5),
                             onPressed: () {
-                               Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => BottomNavigation()));
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (ctx) => Mindset()));
                             },
-                            child: Text("Register",
-                            style: TextStyle(),),
+                            child: Text(
+                              "Register",
+                              style: TextStyle(),
+                            ),
                             textColor: Colors.white,
                           ),
                         )
                       ],
                     ),
-                  
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 20.0,bottom: 40.0),
+                    padding: EdgeInsets.only(top: 20.0, bottom: 40.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('Already Sign Up?',
-                        style: TextStyle(
-                          fontSize: 16
-                        ),
+                        Text(
+                          'Already Sign Up?',
+                          style: TextStyle(fontSize: 16),
                         ),
                         InkWell(
-                          onTap: (){
-                             Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => logIn()));
+                          onTap: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (ctx) => logIn()));
                           },
                           child: Padding(
                             padding: EdgeInsets.only(left: 5),
-                            child: Text('Sign In',
-                            style: TextStyle(
-                              fontWeight: FontWeight.w700,
-                              fontSize: 16,
-                              color: Colors.white
-                            ),
-                            
+                            child: Text(
+                              'Sign In',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 16,
+                                  color: Colors.white),
                             ),
                           ),
                         )

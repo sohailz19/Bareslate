@@ -25,8 +25,11 @@ dependencies:
     sdk: flutter
   curved_navigation_bar: ^0.3.7
   flutter_icons: ^1.1.0
-
-
+  share: ^0.6.5
+  flutter_svg:
+  url_launcher: ^5.7.10
+  external_app_launcher: ^0.0.1
+  toast: ^0.1.5
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
@@ -53,8 +56,16 @@ flutter:
     - assets/image/time.png
     - assets/image/couching.png
     - assets/image/online.png
-  
-
+    - assets/image/chat.png
+    - assets/image/music.png
+    - assets/image/youtube.png
+    - assets/image/musiclist.png
+    - assets/image/shop.jpeg
+    - assets/image/edit.svg
+    - assets/image/share.svg
+    - assets/image/password.svg
+    - assets/image/user.svg
+    - assets/image/edit2.svg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
