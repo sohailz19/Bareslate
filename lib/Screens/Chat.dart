@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:external_app_launcher/external_app_launcher.dart';
 
 class Chat extends StatefulWidget {
   @override
@@ -67,7 +69,19 @@ class _ChatState extends State<Chat> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     color: Color.fromRGBO(40, 124, 109, 5),
-                    onPressed: () {},
+                    onPressed: () {
+                      // await LaunchApp.openApp(
+                      //   androidPackageName: 'com.Slack',
+                      //   iosUrlScheme: 'https://kajabi.com/',
+                      //   appStoreLink:
+                      //       'https://apps.apple.com/in/app/slack/id618783545',
+                      //   // openStore: false
+                      // );
+                      _launchURL();
+                      // Enter thr package name of the App you want to open and for iOS add the URLscheme to the Info.plist file.
+                      // The second arguments decide wether the app redirects PlayStore or AppStore.
+                      // For testing purpose you can enter com.instagram.android
+                    },
                     child: Row(
                       children: [
                         Text(
@@ -95,5 +109,14 @@ class _ChatState extends State<Chat> {
         ],
       ),
     );
+  }
+
+  _launchURL() async {
+    const url = 'https://apps.apple.com/in/app/slack/id618783545';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }

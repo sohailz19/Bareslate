@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import 'package:url_launcher/url_launcher.dart';
 import 'package:Bare_Slate/Screens/Grow.dart';
 import 'package:Bare_Slate/Screens/Podcust/PodcustList.dart';
 import 'package:flutter/material.dart';
@@ -56,7 +56,7 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                     color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(254, 153, 3, 3),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -105,8 +105,7 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                        color: Color.fromRGBO(254, 153, 3, 3),
-
+                      color: Color.fromRGBO(254, 153, 3, 3),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -161,10 +160,10 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                       color: Color.fromRGBO(40, 124, 109, 5),
+                      color: Color.fromRGBO(40, 124, 109, 5),
                       onPressed: () {
-                         Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => Grow()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (ctx) => Grow()));
                       },
                       child: Row(
                         children: [
@@ -345,9 +344,11 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                       color: Color.fromRGBO(40, 124, 109, 5),
-                      onPressed: () { Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => Prodcust()));},
+                      color: Color.fromRGBO(40, 124, 109, 5),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (ctx) => Prodcust()));
+                      },
                       child: Row(
                         children: [
                           Text(
@@ -373,7 +374,7 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 0, left: 15.0,bottom: 20.0),
+              padding: EdgeInsets.only(top: 0, left: 15.0, bottom: 20.0),
               child: Text(
                 "Learn",
                 style: TextStyle(
@@ -383,7 +384,7 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 15.0),
+              padding: EdgeInsets.only(top: 15.0, bottom: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -391,7 +392,9 @@ class _HomeMainState extends State<HomeMain> {
                     width: MediaQuery.of(context).size.width * .30,
                     height: 150,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        _launchURL();
+                      },
                       child: Column(
                         children: [
                           Container(
@@ -443,7 +446,9 @@ class _HomeMainState extends State<HomeMain> {
                     width: MediaQuery.of(context).size.width * .30,
                     height: 150,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        _launchURL();
+                      },
                       child: Column(
                         children: [
                           Container(
@@ -495,7 +500,9 @@ class _HomeMainState extends State<HomeMain> {
                     width: MediaQuery.of(context).size.width * .30,
                     height: 150,
                     child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        _launchURL();
+                      },
                       child: Column(
                         children: [
                           Container(
@@ -587,5 +594,14 @@ class _HomeMainState extends State<HomeMain> {
         ),
       ),
     );
+  }
+
+  _launchURL() async {
+    const url = 'https://kajabi.com/';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }

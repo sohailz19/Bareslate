@@ -1,3 +1,4 @@
+import 'package:Bare_Slate/LoginScreen/register.dart';
 import 'package:flutter/material.dart';
 import 'package:Bare_Slate/Screens/BottomNavigation.dart';
 
@@ -206,8 +207,10 @@ class _logInState extends State<logIn> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (ctx) => logIn()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (ctx) => Register()));
                           },
                           child: Padding(
                             padding: EdgeInsets.only(left: 5),

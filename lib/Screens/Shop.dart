@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Shop extends StatefulWidget {
   @override
@@ -54,10 +55,10 @@ class _ShopState extends State<Shop> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    height: 170,
-                    width: 190,
+                    height: 200,
+                    width: MediaQuery.of(context).size.width * .70,
                     child: Image.asset(
-                      "assets/image/shop.jpg",
+                      "assets/image/shop.jpeg",
                       fit: BoxFit.fill,
                     ))
               ],
@@ -75,7 +76,9 @@ class _ShopState extends State<Shop> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
                     color: Color.fromRGBO(40, 124, 109, 5),
-                    onPressed: () {},
+                    onPressed: () {
+                      _launchURL();
+                    },
                     child: Row(
                       children: [
                         Text(
@@ -103,5 +106,14 @@ class _ShopState extends State<Shop> {
         ],
       ),
     );
+  }
+
+  _launchURL() async {
+    const url = 'https://www.amazon.ca/shop/bareslate';
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 }
