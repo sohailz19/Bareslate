@@ -1,4 +1,5 @@
 import 'package:Bare_Slate/Question/Mind.dart';
+import 'package:Bare_Slate/Question/finance_wealth.dart';
 import 'package:flutter/material.dart';
 import 'package:toast/toast.dart';
 
@@ -16,7 +17,7 @@ class _HealthState extends State<Health> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
             height: MediaQuery.of(context).size.height * .10,
@@ -41,9 +42,11 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "1. How much alcohol do you drink?",
+                        "Q1. The actions I continue to take are the result of my health and wellness goals.",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(254, 153, 3, 2)),
                       ),
                     ),
                     Padding(
@@ -84,8 +87,8 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (a == 1)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Container(
@@ -94,7 +97,7 @@ class _HealthState extends State<Health> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "A. Two or three drinks a week",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -130,8 +133,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 2)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -140,7 +143,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "B. Two or three drinks a month ",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -177,8 +180,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 3)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -187,7 +190,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "C. About one drink a day ",
+                                                  "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -224,8 +227,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 10)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -234,7 +237,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "D. Two or more drinks a day ",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -271,8 +274,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -281,7 +284,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. None ",
+                                                  "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -305,9 +308,12 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "2. When you get frazzled, you:",
+                        "Q2. I have unlimited energy and strive to create new opportunity for myself.",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(254, 153, 3, 2),
+                        ),
                       ),
                     ),
                     Padding(
@@ -348,8 +354,8 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (b == -2)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Container(
@@ -358,7 +364,7 @@ class _HealthState extends State<Health> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "A. Lace up your sneakers or call a girlfriend",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -394,8 +400,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (b == -3)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -404,7 +410,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "B. Take a few deep breaths and keep going",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -441,8 +447,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (b == 4)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -451,7 +457,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "C. Reach for brownies or other comfort foods",
+                                                  "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -488,8 +494,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (b == 5)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -498,7 +504,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "D. Do nothing",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -535,8 +541,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -545,7 +551,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. None ",
+                                                  "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -569,9 +575,12 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "3. How often do you eat red meat?",
+                        "Q3. I ask questions to determine what is best for me vs. setting for what someone esle tells me is best for me",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(254, 153, 3, 2),
+                        ),
                       ),
                     ),
                     Padding(
@@ -612,8 +621,8 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (c == 12)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Container(
@@ -622,7 +631,7 @@ class _HealthState extends State<Health> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "A. Every day",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -658,8 +667,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (c == 5)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -668,7 +677,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "B. One to three times a week",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -705,8 +714,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (c == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -715,7 +724,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "C. Once or twice a month ",
+                                                  "C. Neither Agree Nor Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -752,8 +761,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (c == -5)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -762,7 +771,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "D. I do not eat red meat anymore for at least a year",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -799,8 +808,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (c == -10)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -809,7 +818,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. I have not eaten red meat for over 10 years ",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -833,9 +842,12 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "4. Your highest level of education is:",
+                        "Q4. I am responsible for the choices I make and understand how they contribute to being a healthy person ",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(254, 153, 3, 2),
+                        ),
                       ),
                     ),
                     Padding(
@@ -876,12 +888,12 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (d == 3)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Text(
-                                              "A. High school ",
+                                              "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
                                                   fontSize: 16.0,
@@ -915,12 +927,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (d == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "B. Some college  ",
+                                                "B. Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -956,12 +968,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (d == -4)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "C. College  ",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -997,12 +1009,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (d == -5)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "D. Grad school  ",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1038,8 +1050,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -1048,7 +1060,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. None ",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1072,9 +1084,12 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "5. If you were in a personal crisis, how many people would help you out, even if just to drop off a casserole? ",
+                        "Q5. I stay in tune with my mind & body so that I can address the cause of any future ailment (BEFORE it turns into a disease). ",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(254, 153, 3, 2),
+                        ),
                       ),
                     ),
                     Padding(
@@ -1115,12 +1130,12 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (e == -2)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Text(
-                                              "A. Maybe 10 ",
+                                              "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
                                                   fontSize: 16.0,
@@ -1154,8 +1169,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (e == -3)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -1164,7 +1179,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "B. Tons—I have a huge support network ",
+                                                  "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1201,12 +1216,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (e == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "C. A small group of friends and family ",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1242,12 +1257,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (e == 2)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "D. I'd probably go it alone  ",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1283,7 +1298,7 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(254, 153, 3, 2)
                                               : Colors.grey[350],
                                           child: Row(
                                             children: [
@@ -1293,7 +1308,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. None ",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1317,9 +1332,12 @@ class _HealthState extends State<Health> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "6. How involved are you in your community at large? ",
+                        "Q6. I have the ability to persevere when activities are difficult and/or even painful. ",
                         style: TextStyle(
-                            fontSize: 18.0, fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(254, 153, 3, 2),
+                        ),
                       ),
                     ),
                     Padding(
@@ -1360,8 +1378,8 @@ class _HealthState extends State<Health> {
                                           });
                                         },
                                         color: (f == -5)
-                                            ? Colors.red
-                                            : Colors.grey[350],
+                                            ? Color.fromRGBO(254, 153, 3, 2)
+                                            : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Container(
@@ -1370,7 +1388,7 @@ class _HealthState extends State<Health> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "A. I'm at a school, church, arts or charity activity about weekly  ",
+                                                "A. Strongly Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1406,8 +1424,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (f == -3)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -1416,7 +1434,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "B. I volunteer regularly ",
+                                                  "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1453,12 +1471,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (f == -1)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "C. I pitch in once or twice a year  ",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1494,12 +1512,12 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (f == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "D. I write a check now and then ",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1535,8 +1553,8 @@ class _HealthState extends State<Health> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
-                                              : Colors.grey[350],
+                                              ? Color.fromRGBO(254, 153, 3, 2)
+                                              : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Container(
@@ -1545,7 +1563,7 @@ class _HealthState extends State<Health> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "E. None ",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1566,11 +1584,11 @@ class _HealthState extends State<Health> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding:
-                          EdgeInsets.only(top: 10.0, bottom: 0.0, left: 10.0),
-                      child: Text("Please Select All Question Before Procced"),
-                    ),
+                    // Padding(
+                    //   padding:
+                    //       EdgeInsets.only(top: 10.0, bottom: 0.0, left: 10.0),
+                    //   child: Text("Please Select All Question Before Procced"),
+                    // ),
                     Padding(
                       padding: EdgeInsets.only(top: 30.0, bottom: 30.0),
                       child: Row(
@@ -1595,8 +1613,14 @@ class _HealthState extends State<Health> {
                                             setState(() {
                                               o = a + b + c + d + e + f;
                                             });
-                                            // Navigator.of(context).push(MaterialPageRoute(
-                                            //     builder: (context) => dateOfBirth(age: o,)));
+                                            Navigator.of(context).push(
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Finance(
+                                                          health: o,
+                                                          Mindset:
+                                                              widget.Mindset,
+                                                        )));
                                           } else {
                                             showToast(
                                                 "Please Select Option of Question 6",
@@ -1648,15 +1672,15 @@ class _HealthState extends State<Health> {
                                 // }
                               },
                               child: Text(
-                                "Procced",
+                                "Next",
                                 style: TextStyle(
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     fontWeight: FontWeight.w800,
                                     color: Colors.white),
                               ),
-                              color: Color.fromRGBO(40, 124, 109, 5),
+                              color: Color.fromRGBO(254, 153, 3, 2),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(22),
+                                borderRadius: BorderRadius.circular(20),
                               ),
                             ),
                           ),
