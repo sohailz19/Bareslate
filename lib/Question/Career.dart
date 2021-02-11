@@ -1,14 +1,21 @@
-import 'package:Bare_Slate/Question/Health.dart';
+import 'package:Bare_Slate/Question/Mind.dart';
+import 'package:Bare_Slate/Question/Personal.dart';
 import 'package:flutter/material.dart';
 import 'package:toast/toast.dart';
 
-class Mindset extends StatefulWidget {
+class Carrer extends StatefulWidget {
+  final Mindset;
+  final health;
+  final finance;
+  const Carrer({Key key, this.Mindset, this.finance, this.health})
+      : super(key: key);
   @override
-  _MindsetState createState() => _MindsetState();
+  _CarrerState createState() => _CarrerState();
 }
 
-class _MindsetState extends State<Mindset> {
+class _CarrerState extends State<Carrer> {
   int a, b, c, d, e, f, o;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,11 +27,11 @@ class _MindsetState extends State<Mindset> {
             child: Padding(
               padding: EdgeInsets.only(top: 40.0, left: 20.0, bottom: 10.0),
               child: Text(
-                "General Mindset",
+                "Career & Business",
                 style: TextStyle(
                   fontSize: 30.0,
                   fontWeight: FontWeight.w700,
-                  color: Colors.blueGrey[900],
+                  color: Color.fromRGBO(80, 59, 102, 5),
                 ),
               ),
             ),
@@ -38,11 +45,11 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q1. I invest time in myself to be alone with my thoughts?.",
+                        "Q1. I believe life is a life journey and I am not willing to settle for less than my established goals.",
                         style: TextStyle(
                             fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(80, 59, 102, 5)),
                       ),
                     ),
                     Padding(
@@ -83,7 +90,7 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (a == 1)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
@@ -93,7 +100,7 @@ class _MindsetState extends State<Mindset> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "Strongly Disagree",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -129,7 +136,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 2)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -139,7 +146,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Disagree",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -176,7 +183,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 3)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -186,7 +193,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Neither Agree Nor Disagree",
+                                                  "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -223,7 +230,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 10)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -233,7 +240,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Agree",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -270,7 +277,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -280,7 +287,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -304,11 +311,12 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q2. I feel secure in my ability to be positive, even around negative people?",
+                        "Q2. I believe I can find happiness and fulfilment in my current career and business life",
                         style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(80, 59, 102, 5),
+                        ),
                       ),
                     ),
                     Padding(
@@ -349,7 +357,7 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (b == -2)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
@@ -359,7 +367,7 @@ class _MindsetState extends State<Mindset> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "Strongly Disagree",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -395,7 +403,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (b == -3)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -405,7 +413,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Disagree",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -442,7 +450,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (b == 4)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -452,7 +460,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Neither Agree Nor Disagree",
+                                                  "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -489,7 +497,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (b == 5)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -499,7 +507,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Agree",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -536,7 +544,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -546,7 +554,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -570,11 +578,12 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q3. I find confidence when I am faced with difficult conversations.",
+                        "Q3. I clearly communicate my expectations, and can remain resilient in the face of obstacles without offending others.",
                         style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(80, 59, 102, 5),
+                        ),
                       ),
                     ),
                     Padding(
@@ -615,7 +624,7 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (c == 12)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
@@ -625,7 +634,7 @@ class _MindsetState extends State<Mindset> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "Strongly Disagree",
+                                                "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -661,7 +670,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (c == 5)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -671,7 +680,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Disagree",
+                                                  "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -708,7 +717,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (c == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -718,7 +727,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Neither Agree Nor Disagree",
+                                                  "C. Neither Agree Nor Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -755,7 +764,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (c == -5)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -765,7 +774,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Agree",
+                                                  "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -802,7 +811,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (c == -10)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -812,7 +821,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -836,11 +845,12 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q4. I feel confident to try new things, even if I have no previous experience.",
+                        "Q4. I learn from my mistakes and accept them as future opportunities to perform better.",
                         style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(80, 59, 102, 5),
+                        ),
                       ),
                     ),
                     Padding(
@@ -881,12 +891,12 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (d == 3)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Text(
-                                              "Strongly Disagree",
+                                              "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
                                                   fontSize: 16.0,
@@ -920,12 +930,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (d == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Disagree",
+                                                "B. Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -961,12 +971,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (d == -4)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Neither Agree Nor Disagree ",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1002,12 +1012,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (d == -5)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Agree",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1043,7 +1053,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -1053,7 +1063,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1077,11 +1087,12 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q5. I have people in my life that support me.",
+                        "Q5. I get up every day and look forward to what is on my calendar.",
                         style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(80, 59, 102, 5),
+                        ),
                       ),
                     ),
                     Padding(
@@ -1122,12 +1133,12 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (e == -2)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
                                             Text(
-                                              "Strongly Disagree",
+                                              "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
                                                   fontSize: 16.0,
@@ -1161,7 +1172,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (e == -3)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -1171,7 +1182,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Disagree",
+                                                  "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1208,12 +1219,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (e == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Neither Agree Nor Disagree",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1249,12 +1260,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (e == 2)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Agree ",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1290,8 +1301,8 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
-                                              : Colors.grey[250],
+                                              ? Color.fromRGBO(80, 59, 102, 5)
+                                              : Colors.grey[350],
                                           child: Row(
                                             children: [
                                               Container(
@@ -1300,7 +1311,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1324,11 +1335,12 @@ class _MindsetState extends State<Mindset> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 10.0),
                       child: Text(
-                        "Q6. I can remove my ego and learn new things about myself.",
+                        "Q6. I believe that planning to become the person I want to be is more important than the person I am today.",
                         style: TextStyle(
-                            fontSize: 18.0,
-                            color: Colors.red,
-                            fontWeight: FontWeight.w600),
+                          fontSize: 18.0,
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(80, 59, 102, 5),
+                        ),
                       ),
                     ),
                     Padding(
@@ -1369,7 +1381,7 @@ class _MindsetState extends State<Mindset> {
                                           });
                                         },
                                         color: (f == -5)
-                                            ? Colors.red
+                                            ? Color.fromRGBO(80, 59, 102, 5)
                                             : Colors.grey[250],
                                         child: Row(
                                           children: [
@@ -1379,7 +1391,7 @@ class _MindsetState extends State<Mindset> {
                                                       .width *
                                                   .85,
                                               child: Text(
-                                                "Strongly Disagree",
+                                                "A. Strongly Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1415,7 +1427,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (f == -3)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -1425,7 +1437,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Disagree",
+                                                  "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1462,12 +1474,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (f == -1)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Neither Agree Nor Disagree",
+                                                "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1503,12 +1515,12 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (f == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
                                               Text(
-                                                "Agree",
+                                                "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
                                                     fontSize: 16.0,
@@ -1544,7 +1556,7 @@ class _MindsetState extends State<Mindset> {
                                             });
                                           },
                                           color: (a == 0)
-                                              ? Colors.red
+                                              ? Color.fromRGBO(80, 59, 102, 5)
                                               : Colors.grey[250],
                                           child: Row(
                                             children: [
@@ -1554,7 +1566,7 @@ class _MindsetState extends State<Mindset> {
                                                         .width *
                                                     .85,
                                                 child: Text(
-                                                  "Strongly Agree",
+                                                  "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
                                                       fontSize: 16.0,
@@ -1607,9 +1619,14 @@ class _MindsetState extends State<Mindset> {
                                             Navigator.of(context).push(
                                                 MaterialPageRoute(
                                                     builder: (context) =>
-                                                        Health(
-                                                          Mindset: o,
-                                                        )));
+                                                        Personal(
+                                                            Mindset:
+                                                                widget.Mindset,
+                                                            health:
+                                                                widget.health,
+                                                            finance:
+                                                                widget.finance,
+                                                            career: o)));
                                           } else {
                                             showToast(
                                                 "Please Select Option of Question 6",
@@ -1667,7 +1684,7 @@ class _MindsetState extends State<Mindset> {
                                     fontWeight: FontWeight.w800,
                                     color: Colors.white),
                               ),
-                              color: Colors.red,
+                              color: Color.fromRGBO(80, 59, 102, 5),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(20),
                               ),

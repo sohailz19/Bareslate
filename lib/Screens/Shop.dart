@@ -82,7 +82,7 @@ class _ShopState extends State<Shop> {
                     child: Row(
                       children: [
                         Text(
-                          "Shop With US",
+                          "Shop With Us",
                           style: TextStyle(
                               fontSize: 20.0,
                               fontWeight: FontWeight.w900,
