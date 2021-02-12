@@ -15,7 +15,7 @@ class _VideoListState extends State<VideoList> {
         child: Column(
           children: [
              Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -30,7 +30,7 @@ class _VideoListState extends State<VideoList> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 15.0),
+              padding: EdgeInsets.only(top: 40.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -71,11 +71,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -85,7 +85,7 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "Do You Have Nothink Left To give",
+                                "Ask Better Quetions | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
@@ -134,11 +134,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home2.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -148,7 +148,7 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "How To get More out of 4 impossible goal",
+                                "Ask More Get More | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
@@ -205,11 +205,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -219,7 +219,7 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "Do You Have Nothink Left To give",
+                                "Ask Better Quetions | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
@@ -268,11 +268,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home2.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -282,141 +282,7 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "How To get More out of 4 impossible goal",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                    color: Colors.black),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(top: 15.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 0.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15),
-                          bottomLeft: Radius.circular(15),
-                          bottomRight: Radius.circular(15),
-                        ),
-                        // color: Colors.red[600],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.white,
-                            offset: Offset(0.0, 0.5), //(x,y)
-                            blurRadius: 1.0,
-                          ),
-                        ],
-                      ),
-                      height: 140,
-                      width: MediaQuery.of(context).size.width * .40,
-                      child: RaisedButton(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14.0),
-                            side: BorderSide(color: Colors.indigo[300])),
-                        elevation: 5.0,
-                        padding: EdgeInsets.only(
-                            top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
-                        child: Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(14),
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 140,
-                                    width:
-                                        MediaQuery.of(context).size.width * .40,
-                                    child: Image.asset(
-                                        "assets/image/homemain.jpg",
-                                        fit: BoxFit.fill),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  top: 100.0, left: 7.0, right: 5.0),
-                              child: Text(
-                                "Do You Have Nothink Left To give",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16,
-                                    color: Colors.black),
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(left: 0.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(15),
-                          topRight: Radius.circular(15),
-                          bottomLeft: Radius.circular(15),
-                          bottomRight: Radius.circular(15),
-                        ),
-                        // color: Colors.red[600],
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.white,
-                            offset: Offset(0.0, 0.5), //(x,y)
-                            blurRadius: 1.0,
-                          ),
-                        ],
-                      ),
-                      height: 140,
-                      width: MediaQuery.of(context).size.width * .40,
-                      child: RaisedButton(
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(14.0),
-                            side: BorderSide(color: Colors.indigo[300])),
-                        elevation: 5.0,
-                        padding: EdgeInsets.only(
-                            top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
-                        child: Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(14),
-                              child: Column(
-                                children: [
-                                  Container(
-                                    height: 140,
-                                    width:
-                                        MediaQuery.of(context).size.width * .40,
-                                    child: Image.asset(
-                                        "assets/image/homemain.jpg",
-                                        fit: BoxFit.fill),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  top: 100.0, left: 7.0, right: 5.0),
-                              child: Text(
-                                "How To get More out of 4 impossible goal",
+                                "Ask More Get More | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
@@ -473,11 +339,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -487,7 +353,7 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "Do You Have Nothink Left To give",
+                                "Ask Better Quetions | #BARESLATE ",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
@@ -536,11 +402,11 @@ class _VideoListState extends State<VideoList> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .40,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home2.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -550,7 +416,141 @@ class _VideoListState extends State<VideoList> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "How To get More out of 4 impossible goal",
+                                "Ask More Get More | #BARESLATE",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: Colors.black),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 15.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(left: 0.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          topRight: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
+                        ),
+                        // color: Colors.red[600],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(0.0, 0.5), //(x,y)
+                            blurRadius: 1.0,
+                          ),
+                        ],
+                      ),
+                      height: 140,
+                      width: MediaQuery.of(context).size.width * .40,
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14.0),
+                            side: BorderSide(color: Colors.indigo[300])),
+                        elevation: 5.0,
+                        padding: EdgeInsets.only(
+                            top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
+                        onPressed: () {},
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 100,
+                                    width:
+                                        MediaQuery.of(context).size.width * .40,
+                                    child: Image.asset(
+                                        "assets/image/home.webp",
+                                        fit: BoxFit.fill),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: 100.0, left: 7.0, right: 5.0),
+                              child: Text(
+                                "Ask Better Quetions | #BARESLATE",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                    color: Colors.black),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 0.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          topRight: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
+                        ),
+                        // color: Colors.red[600],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(0.0, 0.5), //(x,y)
+                            blurRadius: 1.0,
+                          ),
+                        ],
+                      ),
+                      height: 140,
+                      width: MediaQuery.of(context).size.width * .40,
+                      child: RaisedButton(
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(14.0),
+                            side: BorderSide(color: Colors.indigo[300])),
+                        elevation: 5.0,
+                        padding: EdgeInsets.only(
+                            top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
+                        onPressed: () {},
+                        child: Stack(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(14),
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 100,
+                                    width:
+                                        MediaQuery.of(context).size.width * .40,
+                                    child: Image.asset(
+                                        "assets/image/home2.webp",
+                                        fit: BoxFit.fill),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: 100.0, left: 7.0, right: 5.0),
+                              child: Text(
+                                "Ask More Get More | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,

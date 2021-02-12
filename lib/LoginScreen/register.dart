@@ -1,5 +1,6 @@
 import 'package:Bare_Slate/LoginScreen/loginIn.dart';
 import 'package:Bare_Slate/Question/Mind.dart';
+import 'package:Bare_Slate/Question/Start.dart';
 import 'package:Bare_Slate/Screens/BottomNavigation.dart';
 import 'package:flutter/material.dart';
 
@@ -58,11 +59,11 @@ class _RegisterState extends State<Register> {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(
-                      top: 20.0,
+                      top: 30.0,
                     ),
                     child: Text(
                       "Welcome To Bareslate",
-                      style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                   ),
                   Padding(
@@ -143,6 +144,7 @@ class _RegisterState extends State<Register> {
                             // prefixIcon: Icon(Icons.mail),
                             // suffixIcon: Icon(Icons.mail),
                             fillColor: Colors.white),
+                            keyboardType: TextInputType.number,
                       ),
                     ),
                   ),
@@ -238,12 +240,12 @@ class _RegisterState extends State<Register> {
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(25.0)),
-                            color: Color.fromRGBO(40, 124, 109, 5),
+                            color: Color.fromRGBO(51, 73, 94, 1),
                             onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (ctx) => Mindset()));
+                                      builder: (ctx) => Start()));
                             },
                             child: Text(
                               "Register",
@@ -262,7 +264,7 @@ class _RegisterState extends State<Register> {
                       children: [
                         Text(
                           'Already Sign Up?',
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(fontSize: 16, color: Colors.black45),
                         ),
                         InkWell(
                           onTap: () {
@@ -276,7 +278,7 @@ class _RegisterState extends State<Register> {
                               style: TextStyle(
                                   fontWeight: FontWeight.w700,
                                   fontSize: 16,
-                                  color: Colors.white),
+                                  color: Color.fromRGBO(51, 73, 94, 1)),
                             ),
                           ),
                         )

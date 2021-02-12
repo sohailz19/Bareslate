@@ -40,6 +40,7 @@ class _MindsetState extends State<Mindset> {
                       child: Text(
                         "Q1. I invest time in myself to be alone with my thoughts?.",
                         style: TextStyle(
+                          
                             fontSize: 18.0,
                             color: Colors.red,
                             fontWeight: FontWeight.w600),

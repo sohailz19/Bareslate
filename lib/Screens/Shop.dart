@@ -58,14 +58,14 @@ class _ShopState extends State<Shop> {
                     height: 200,
                     width: MediaQuery.of(context).size.width * .70,
                     child: Image.asset(
-                      "assets/image/shop.jpeg",
-                      fit: BoxFit.fill,
+                      "assets/image/shop.png",
+                      fit: BoxFit.contain,
                     ))
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 90.0, right: 20.0),
+            padding: EdgeInsets.only(top: 50.0, right: 2.0, left: 5.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -74,7 +74,7 @@ class _ShopState extends State<Shop> {
                   height: 45,
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10)),
+                        borderRadius: BorderRadius.circular(15)),
                     color: Color.fromRGBO(40, 124, 109, 5),
                     onPressed: () {
                       _launchURL();
@@ -89,7 +89,7 @@ class _ShopState extends State<Shop> {
                               color: Colors.white),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(left: 3.0),
+                          padding:  EdgeInsets.only(left: 8.0, right: 5.0),
                           child: Icon(
                             Icons.arrow_forward_rounded,
                             size: 30,
