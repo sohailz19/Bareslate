@@ -3,6 +3,7 @@ import 'package:Bare_Slate/Screens/Podcust/MusicList.dart';
 import 'package:Bare_Slate/Screens/Podcust/VideoList.dart';
 import 'package:flutter/material.dart';
 
+
 class Prodcust extends StatefulWidget {
   @override
   _ProdcustState createState() => _ProdcustState();
@@ -34,7 +35,7 @@ class _ProdcustState extends State<Prodcust> {
                   width: MediaQuery.of(context).size.width * .65,
                   height: 60,
                   child: RaisedButton(
-                    color: Color.fromRGBO(80, 59, 102, 3),
+                    color: Color.fromRGBO(254,154,0,1),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
                     onPressed: () {
@@ -89,7 +90,7 @@ class _ProdcustState extends State<Prodcust> {
                   width: MediaQuery.of(context).size.width * .65,
                   height: 60,
                   child: RaisedButton(
-                    color: Color.fromRGBO(80, 59, 102, 3),
+                    color: Color.fromRGBO(254,154,0,1),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0)),
                     onPressed: () {
@@ -131,3 +132,4 @@ class _ProdcustState extends State<Prodcust> {
     );
   }
 }
+

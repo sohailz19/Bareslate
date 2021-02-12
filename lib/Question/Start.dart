@@ -17,9 +17,11 @@ class _StartState extends State<Start> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                  height: 100,
+                  height: 200,
                   width: 250,
-                  child: Image.asset("assets/image/logo.png")),
+                  child: Image.asset("assets/image/image1.png",
+                  fit: BoxFit.contain,),
+                  ),
             ],
           ),
           Padding(

@@ -12,7 +12,7 @@ class _ShopState extends State<Shop> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromRGBO(0, 138, 151, 2),
+        backgroundColor: Color.fromRGBO(113,174,169,1),
         title: Padding(
           padding: const EdgeInsets.only(left: 15.0),
           child: Text(
@@ -75,7 +75,7 @@ class _ShopState extends State<Shop> {
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(15)),
-                    color: Color.fromRGBO(40, 124, 109, 5),
+                    color: Color.fromRGBO(254,154,0,1),
                     onPressed: () {
                       _launchURL();
                     },

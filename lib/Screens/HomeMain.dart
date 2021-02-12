@@ -21,9 +21,9 @@ class _HomeMainState extends State<HomeMain> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 30),
+                  padding: const EdgeInsets.only(top: 40),
                   child: Container(
-                    height: 50,
+                    height: 45,
                     width: 230,
                     child: Image.asset(
                       "assets/image/logo.png",
@@ -56,7 +56,7 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(52,73,97,1),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -75,7 +75,7 @@ class _HomeMainState extends State<HomeMain> {
                             "Daily Quote",
                             style: TextStyle(
                               fontSize: 16.0,
-                              color: Colors.white,
+                              color: Color.fromRGBO(249,222,174,1),
                             ),
                           ),
                         ),
@@ -87,7 +87,9 @@ class _HomeMainState extends State<HomeMain> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "My Name is Mohd Saad Bhati and i am a flutter and React Developer with 5 man Team in flutter",
+                            
+                            "“Perfect is the enemy of good.” –Voltaire. Don’t worry about doing things perfectly. If you do, you’ll never get...",
+                            textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -105,7 +107,7 @@ class _HomeMainState extends State<HomeMain> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(52,73,97,1),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -121,10 +123,10 @@ class _HomeMainState extends State<HomeMain> {
                         Padding(
                           padding: const EdgeInsets.only(top: 5.0),
                           child: Text(
-                            "Daily Quote",
+                            "Daily Mantra",
                             style: TextStyle(
                               fontSize: 16.0,
-                              color: Colors.white,
+                              color: Color.fromRGBO(249,222,174,1),
                             ),
                           ),
                         ),
@@ -136,7 +138,8 @@ class _HomeMainState extends State<HomeMain> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "My Name is Mohd Saad Bhati and i am a flutter and React Developer with 5 man Team in flutter",
+                            "All is well, right here, right now. This mantra reminds us that no matter how chaotic life can seem. Things are not...",
+                            textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -160,7 +163,7 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      color: Color.fromRGBO(40, 124, 109, 5),
+                      color: Color.fromRGBO(254,154,0,1),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (ctx) => Grow()));
@@ -235,7 +238,7 @@ class _HomeMainState extends State<HomeMain> {
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
                         onPressed: () {
                          const url =
-                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
                           _launchURL1(url);
                         },
                         child: Stack(
@@ -311,7 +314,7 @@ class _HomeMainState extends State<HomeMain> {
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
                         onPressed: () {
                           const url =
-                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
                           _launchURL1(url);
                         },
                         child: Stack(
@@ -361,7 +364,7 @@ class _HomeMainState extends State<HomeMain> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0, right: 20.0),
+              padding: EdgeInsets.only(top: 25.0, right: 20.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -371,7 +374,7 @@ class _HomeMainState extends State<HomeMain> {
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10)),
-                      color: Color.fromRGBO(40, 124, 109, 5),
+                      color: Color.fromRGBO(254,154,0,1),
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (ctx) => Prodcust()));
@@ -459,7 +462,7 @@ class _HomeMainState extends State<HomeMain> {
                           Padding(
                             padding: const EdgeInsets.only(top: 7.0),
                             child: Text(
-                              "Coaching Program",
+                              "Page Designer",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 16.0, fontWeight: FontWeight.w700),
@@ -513,7 +516,7 @@ class _HomeMainState extends State<HomeMain> {
                           Padding(
                             padding: const EdgeInsets.only(top: 7.0),
                             child: Text(
-                              "Online Courses",
+                              "Course Creation",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 16.0, fontWeight: FontWeight.w700),
@@ -567,7 +570,7 @@ class _HomeMainState extends State<HomeMain> {
                           Padding(
                             padding: const EdgeInsets.only(top: 7.0),
                             child: Text(
-                              "Time Manegment",
+                              "Marketing",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 16.0, fontWeight: FontWeight.w700),
