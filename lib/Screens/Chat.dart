@@ -43,22 +43,22 @@ class _ChatState extends State<Chat> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 30.0),
+            padding: EdgeInsets.only(top: 10.0, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    height: 130,
-                    width: 150,
+                    height: 170,
+                    width: 160,
                     child: Image.asset(
                       "assets/image/chat.png",
-                      fit: BoxFit.fill,
+                      fit: BoxFit.cover,
                     ))
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 90.0, right: 20.0),
+            padding: EdgeInsets.only(top: 40.0, right: 2.0, left: 8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

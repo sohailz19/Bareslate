@@ -33,11 +33,11 @@ class _ChangePasswordState extends State<ChangePassword> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            width: 120.0,
-                            height: 60.0,
+                            width: 200.0,
+                            height: 100.0,
                             child: Image.asset(
                               "assets/image/logo.png",
-                              fit: BoxFit.fill,
+                              fit: BoxFit.contain,
                             ),
                           ),
                           /*Padding(
@@ -79,13 +79,13 @@ class _ChangePasswordState extends State<ChangePassword> {
                     child: Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(top: 20.0),
+                          padding: EdgeInsets.only(top: 20.0, right: 10.0),
                           child: Text(
-                            "Change Password",
+                            "Change Your Password",
                             style: TextStyle(
-                                fontSize: 26.0,
+                                fontSize: 24.0,
                                 fontWeight: FontWeight.w700,
-                                color: Colors.blueGrey[900]),
+                                color: Colors.white),
                           ),
                         ),
                         Padding(

@@ -233,7 +233,11 @@ class _HomeMainState extends State<HomeMain> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                         const url =
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                          _launchURL1(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -241,11 +245,10 @@ class _HomeMainState extends State<HomeMain> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .45,
-                                    child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                    child: Image.asset("assets/image/home.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -255,13 +258,23 @@ class _HomeMainState extends State<HomeMain> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "Do You Have Nothink Left To give",
+                                "Ask Better Questions | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                     color: Colors.black),
                               ),
-                            )
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: 100.0, left: 7.0, right: 5.0),
+                              // child: Text(
+                              //   "Do You Have Nothink Left To give",
+                              //   style: TextStyle(
+                              //       fontWeight: FontWeight.bold,
+                              //       fontSize: 16,
+                              //       color: Colors.black),
+                            ),
                           ],
                         ),
                       ),
@@ -296,7 +309,11 @@ class _HomeMainState extends State<HomeMain> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                          const url =
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                          _launchURL1(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -304,11 +321,11 @@ class _HomeMainState extends State<HomeMain> {
                               child: Column(
                                 children: [
                                   Container(
-                                    height: 140,
+                                    height: 100,
                                     width:
                                         MediaQuery.of(context).size.width * .45,
                                     child: Image.asset(
-                                        "assets/image/homemain.jpg",
+                                        "assets/image/home2.webp",
                                         fit: BoxFit.fill),
                                   ),
                                 ],
@@ -318,13 +335,23 @@ class _HomeMainState extends State<HomeMain> {
                               padding: EdgeInsets.only(
                                   top: 100.0, left: 7.0, right: 5.0),
                               child: Text(
-                                "How To get More out of 4 impossible goal",
+                                "Ask More Get More | #BARESLATE",
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                     color: Colors.black),
                               ),
-                            )
+                            ),
+                            Padding(
+                              padding: EdgeInsets.only(
+                                  top: 100.0, left: 7.0, right: 5.0),
+                              // child: Text(
+                              //   "How To get More out of 4 impossible goal",
+                              //   style: TextStyle(
+                              //       fontWeight: FontWeight.bold,
+                              //       fontSize: 16,
+                              //       color: Colors.black),
+                            ),
                           ],
                         ),
                       ),
@@ -604,4 +631,14 @@ class _HomeMainState extends State<HomeMain> {
       throw 'Could not launch $url';
     }
   }
+
+  _launchURL1(url1) async {
+    var url = url1;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
+

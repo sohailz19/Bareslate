@@ -14,18 +14,19 @@ class _GrowState extends State<Grow> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Padding(padding: EdgeInsets.only(top: 20.0,left: 15.0),
-            child: Row(
-              children: [
-                Text("Daily Quotes & Mantra",
-                style: TextStyle(
-                  fontSize: 26.0,
-                 color: Colors.blueGrey[900],
-                  fontWeight: FontWeight.bold
-                ),
-                ),
-              ],
-            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 15.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Daily Quotes & Mantra",
+                    style: TextStyle(
+                        fontSize: 26.0,
+                        color: Colors.blueGrey[900],
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
             Padding(
               padding: EdgeInsets.only(top: 20.0),
@@ -40,7 +41,7 @@ class _GrowState extends State<Grow> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                     color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(254, 153, 3, 3),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -71,7 +72,7 @@ class _GrowState extends State<Grow> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "My Name is Mohd Saad Bhati and i am a flutter and React Developer with 5 man Team in flutter",
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -89,8 +90,7 @@ class _GrowState extends State<Grow> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                        color: Color.fromRGBO(254, 153, 3, 3),
-
+                      color: Color.fromRGBO(254, 153, 3, 3),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -121,7 +121,7 @@ class _GrowState extends State<Grow> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "My Name is Mohd Saad Bhati and i am a flutter and React Developer with 5 man Team in flutter",
+                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -134,50 +134,53 @@ class _GrowState extends State<Grow> {
                 ],
               ),
             ),
-             Padding(padding: EdgeInsets.only(top: 20.0,left: 15.0),
-            child: Row(
-              children: [
-                Text("Daily Post",
-                style: TextStyle(
-                  fontSize: 26.0,
-                 color: Colors.blueGrey[900],
-                  fontWeight: FontWeight.bold
-                ),
-                ),
-              ],
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 15.0),
+              child: Row(
+                children: [
+                  Text(
+                    "Daily Post",
+                    style: TextStyle(
+                        fontSize: 26.0,
+                        color: Colors.blueGrey[900],
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
-            ),
-            Padding(padding: EdgeInsets.only(top: 10.0,left: 15.0,right: 15.0),
-            child: Container(
-              height: 200.0,
-              decoration: BoxDecoration(
-                      // borderRadius: BorderRadius.only(
-                      //   topLeft: Radius.circular(15),
-                      //   topRight: Radius.circular(15),
-                      //   bottomLeft: Radius.circular(15),
-                      //   bottomRight: Radius.circular(15),
-                      // ),
-                        color: Colors.grey[400],
+            Padding(
+              padding: EdgeInsets.only(top: 10.0, left: 15.0, right: 15.0),
+              child: Container(
+                height: 200.0,
+                decoration: BoxDecoration(
+                  // borderRadius: BorderRadius.only(
+                  //   topLeft: Radius.circular(15),
+                  //   topRight: Radius.circular(15),
+                  //   bottomLeft: Radius.circular(15),
+                  //   bottomRight: Radius.circular(15),
+                  // ),
+                  color: Colors.grey[400],
 
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(0.0, 0.5), //(x,y)
-                          blurRadius: 1.0,
-                        ),
-                      ],
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(0.0, 0.5), //(x,y)
+                      blurRadius: 1.0,
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 5.0,left: 5.0,right: 5.0),
-                      child: Text("I Am a Flutter and react  Developer with more than 2+ year experince in the native app development",
-                      style: TextStyle(
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
+                  child: Text(
+                    "I Am a Flutter and react  Developer with more than 2+ year experince in the native app development",
+                    style: TextStyle(
                         fontSize: 16.0,
                         color: Colors.black,
-                        fontWeight: FontWeight.w500
-                      ),
-                      ),
-                    ),
-            ),
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
             ),
           ],
         ),

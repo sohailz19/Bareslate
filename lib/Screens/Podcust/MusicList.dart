@@ -1,6 +1,7 @@
 import 'package:Bare_Slate/Appbar.dart';
 import 'package:flutter/material.dart';
 
+
 class MusicList extends StatefulWidget {
   @override
   _MusicListState createState() => _MusicListState();
@@ -15,7 +16,7 @@ class _MusicListState extends State<MusicList> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 35.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -30,7 +31,7 @@ class _MusicListState extends State<MusicList> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 35.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -41,7 +42,9 @@ class _MusicListState extends State<MusicList> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(13)),
                       color: Color.fromRGBO(244, 85, 61, 3),
-                      onPressed: () {},
+                      onPressed: () {
+                        
+                      },
                       child: Row(
                         children: [
                           Padding(
@@ -57,12 +60,16 @@ class _MusicListState extends State<MusicList> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
-                            child: Text(
-                              "Play any of your faivrat song.",
-                              style: TextStyle(
-                                  fontSize: 20.0,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w800),
+                            child: Container(
+                              width: MediaQuery.of(context).size.height * 0.33,
+                              child: Text(
+                                "Meditations & Affirmations | Fuelled by Bare Slate.",
+                                
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w800),
+                              ),
                             ),
                           )
                         ],
@@ -73,7 +80,7 @@ class _MusicListState extends State<MusicList> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -100,12 +107,15 @@ class _MusicListState extends State<MusicList> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
-                            child: Text(
-                              "who you are.",
-                              style: TextStyle(
-                                  fontSize: 20.0,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w800),
+                            child: Container(
+                              width: MediaQuery.of(context).size.height * 0.33,
+                              child: Text(
+                                "Ask More Get More",
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w800),
+                              ),
                             ),
                           )
                         ],
@@ -116,7 +126,7 @@ class _MusicListState extends State<MusicList> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -143,12 +153,15 @@ class _MusicListState extends State<MusicList> {
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
-                            child: Text(
-                              "Do what your heart say.",
-                              style: TextStyle(
-                                  fontSize: 20.0,
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w800),
+                            child: Container(
+                              width: MediaQuery.of(context).size.height * 0.33,
+                              child: Text(
+                                " Get More ",
+                                style: TextStyle(
+                                    fontSize: 20.0,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w800),
+                              ),
                             ),
                           )
                         ],
