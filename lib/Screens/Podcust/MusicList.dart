@@ -61,7 +61,7 @@ class _MusicListState extends State<MusicList> {
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
                             child: Container(
-                              width: MediaQuery.of(context).size.height * 0.33,
+                              width: MediaQuery.of(context).size.height * 0.32,
                               child: Text(
                                 "Meditations & Affirmations | Fuelled by Bare Slate.",
                                 
@@ -108,7 +108,7 @@ class _MusicListState extends State<MusicList> {
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
                             child: Container(
-                              width: MediaQuery.of(context).size.height * 0.33,
+                              width: MediaQuery.of(context).size.height * 0.32,
                               child: Text(
                                 "Ask More Get More",
                                 style: TextStyle(
@@ -154,7 +154,7 @@ class _MusicListState extends State<MusicList> {
                           Padding(
                             padding: const EdgeInsets.only(left: 9.0),
                             child: Container(
-                              width: MediaQuery.of(context).size.height * 0.33,
+                              width: MediaQuery.of(context).size.height * 0.32,
                               child: Text(
                                 " Get More ",
                                 style: TextStyle(

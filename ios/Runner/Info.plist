@@ -41,7 +41,7 @@
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
     <array>
-	    <string>https://apps.apple.com/in/app/slack/id618783545re</string> // url scheme name of the app
+	    <string>https://apps.apple.com/in/app/slack/id618783545re</string> 
     </array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
