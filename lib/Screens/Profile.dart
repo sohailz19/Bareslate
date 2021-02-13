@@ -6,6 +6,8 @@ import 'package:Bare_Slate/Screens/userUpdate/UserDetailUpdate.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:share/share.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import 'package:flutter_svg/flutter_svg.dart';
 
 class Profile extends StatefulWidget {
@@ -67,7 +69,7 @@ class _ProfileState extends State<Profile> {
                 height: 110.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5.0),
-                  color: Color.fromRGBO(113,174,169,1),
+                  color: Color.fromRGBO(113, 174, 169, 1),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey,
@@ -81,42 +83,25 @@ class _ProfileState extends State<Profile> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      // Padding(
-                      //   padding: EdgeInsets.only(
-                      //       top: 30.0, bottom: 20.0, left: 10.0),
-                      //   child: Container(
-                      //     height: 60.0,
-                      //     width: 100.0,
-                      //     child: Image.asset("assets/image/logo.png"),
-                      //   ),
-                      // ),
                       Container(
-                        //height: 200.0,
                         child: Column(
-                          // mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsets.all(8.0),
+                              padding: EdgeInsets.only(top: 25.0),
                               child: Container(
-                                width: 220,
-                                height: 70,
-                                child: Image.asset('assets/image/logo.png')),
+                                  width: 220,
+                                  height: 45,
+                                  child: Image.asset('assets/image/logo.png',fit: BoxFit.fill,),
+                  
+                                  ),
                             ),
-                            // Padding(
-                            //   padding: EdgeInsets.only(top: 30.0, left: 20.0),
-                            //   child: Text(
-                            //     "Bare Slate",
-                            //     style: TextStyle(
-                            //       fontSize: 25.0,
-                            //     ),
-                            //   ),
-                            // ),
                             Column(
+                            
                               children: [
                                 Padding(
                                   padding:
-                                      EdgeInsets.only(top: 0.0, left: 20.0),
+                                      EdgeInsets.only(top: 0.0, left: 5.0,),
                                   child: Container(
                                     width:
                                         MediaQuery.of(context).size.width * .45,
@@ -139,7 +124,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.only(top: 20.0, left: 0.0, right: 5.0),
+                            EdgeInsets.only(top: 0, left: 0.0, right: 5.0),
                         child: RaisedButton(
                           onPressed: () {
                             // (userdata != null)
@@ -161,7 +146,7 @@ class _ProfileState extends State<Profile> {
                           elevation: 0.0,
                           padding: EdgeInsets.only(
                               top: 10.0, right: 5.0, bottom: 10.0, left: 5.0),
-                          color: Color.fromRGBO(80,59,102,1),
+                          color: Color.fromRGBO(80, 59, 102, 1),
                           child: SvgPicture.asset("assets/image/edit.svg"),
                         ),
                       ),
@@ -379,10 +364,52 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
               ),
+              Padding(
+                padding: EdgeInsets.only(top: 25.0, left: 10.0, right: 10.0),
+                child: Container(
+                  width: MediaQuery.of(context).size.width * 1,
+                  child: RaisedButton(
+                    onPressed: () {
+                      const url = "https://www.facebook.com/bareslate";
+                      _launchURL4(url);
+                    },
+                    padding:
+                        EdgeInsets.only(top: 10.0, bottom: 10.0, left: 10.0),
+                    color: Colors.white,
+                    child: Row(
+                      children: [
+                        Container(
+                          height: 40.0,
+                          width: 40.0,
+                          child: Image.asset("assets/image/fb.png"),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 20.0),
+                          child: Text(
+                            "Follow Us",
+                            style: TextStyle(
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
       ),
     );
+  }
+}
+
+_launchURL4(url4) async {
+  var url = url4;
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }

@@ -102,6 +102,9 @@ class _FinanceState extends State<Finance> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (a == 1)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -148,6 +151,9 @@ class _FinanceState extends State<Finance> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 2)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -195,6 +201,9 @@ class _FinanceState extends State<Finance> {
                                                   "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -242,6 +251,9 @@ class _FinanceState extends State<Finance> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 10)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -289,6 +301,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -369,6 +384,9 @@ class _FinanceState extends State<Finance> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (b == -2)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -415,6 +433,9 @@ class _FinanceState extends State<Finance> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (b == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -462,6 +483,9 @@ class _FinanceState extends State<Finance> {
                                                   "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (b == 4)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -509,6 +533,9 @@ class _FinanceState extends State<Finance> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (b == 5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -556,6 +583,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -636,6 +666,9 @@ class _FinanceState extends State<Finance> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (c == 12)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -682,6 +715,9 @@ class _FinanceState extends State<Finance> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (c == 5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -729,6 +765,9 @@ class _FinanceState extends State<Finance> {
                                                   "C. Neither Agree Nor Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (c == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -776,6 +815,9 @@ class _FinanceState extends State<Finance> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (c == -5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -823,6 +865,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (c == -10)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -898,6 +943,9 @@ class _FinanceState extends State<Finance> {
                                               "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
+                                                color: (d == 3)
+                                            ? Colors.white
+                                            : Colors.black,
                                                   fontSize: 16.0,
                                                   fontWeight: FontWeight.bold),
                                             ),
@@ -937,6 +985,9 @@ class _FinanceState extends State<Finance> {
                                                 "B. Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (d == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -978,6 +1029,9 @@ class _FinanceState extends State<Finance> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (d == -4)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1019,6 +1073,9 @@ class _FinanceState extends State<Finance> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (d == -5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1065,6 +1122,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1140,6 +1200,9 @@ class _FinanceState extends State<Finance> {
                                               "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
+                                                color: (e == -2)
+                                            ? Colors.white
+                                            : Colors.black,
                                                   fontSize: 16.0,
                                                   fontWeight: FontWeight.bold),
                                             ),
@@ -1184,6 +1247,9 @@ class _FinanceState extends State<Finance> {
                                                   "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (e == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1226,6 +1292,9 @@ class _FinanceState extends State<Finance> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (e == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1267,6 +1336,9 @@ class _FinanceState extends State<Finance> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (e == 2)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1313,6 +1385,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1393,6 +1468,9 @@ class _FinanceState extends State<Finance> {
                                                 "A. Strongly Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == -5)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1439,6 +1517,9 @@ class _FinanceState extends State<Finance> {
                                                   "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (f == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1481,6 +1562,9 @@ class _FinanceState extends State<Finance> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == -1)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1522,6 +1606,9 @@ class _FinanceState extends State<Finance> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1568,6 +1655,9 @@ class _FinanceState extends State<Finance> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),

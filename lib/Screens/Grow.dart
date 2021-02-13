@@ -151,15 +151,155 @@ class _GrowState extends State<Grow> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0, left: 20.0, right: 15.0),
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 15.0),
               child: Container(
                 height: 100.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15),
-                    topRight: Radius.circular(15),
-                    bottomLeft: Radius.circular(15),
-                    bottomRight: Radius.circular(15),
+                    // topLeft: Radius.circular(15),
+                    // topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
+                  color: Colors.grey[200],
+
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(0.0, 0.5), //(x,y)
+                      blurRadius: 1.0,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
+                  child: Text(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 15.0),
+              child: Container(
+                height: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    // topLeft: Radius.circular(15),
+                    // topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
+                  color: Colors.grey[200],
+
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(0.0, 0.5), //(x,y)
+                      blurRadius: 1.0,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
+                  child: Text(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 15.0),
+              child: Container(
+                height: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    // topLeft: Radius.circular(15),
+                    // topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
+                  color: Colors.grey[200],
+
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(0.0, 0.5), //(x,y)
+                      blurRadius: 1.0,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
+                  child: Text(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 15.0),
+              child: Container(
+                height: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    // topLeft: Radius.circular(15),
+                    // topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
+                  ),
+                  color: Colors.grey[200],
+
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.white,
+                      offset: Offset(0.0, 0.5), //(x,y)
+                      blurRadius: 1.0,
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
+                  child: Text(
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 16.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.0, left: 20.0, right: 15.0),
+              child: Container(
+                height: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    // topLeft: Radius.circular(15),
+                    // topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(30),
+                    bottomRight: Radius.circular(30),
                   ),
                   color: Colors.grey[200],
 

@@ -100,6 +100,9 @@ class _HealthState extends State<Health> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (a == 1)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -146,6 +149,9 @@ class _HealthState extends State<Health> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 2)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -193,6 +199,9 @@ class _HealthState extends State<Health> {
                                                   "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -240,6 +249,9 @@ class _HealthState extends State<Health> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 10)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -287,6 +299,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -367,6 +382,9 @@ class _HealthState extends State<Health> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (b == -2)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -413,6 +431,9 @@ class _HealthState extends State<Health> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (b == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -460,6 +481,9 @@ class _HealthState extends State<Health> {
                                                   "C. Neither Agree Nor Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (b == 4)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -507,6 +531,9 @@ class _HealthState extends State<Health> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (b == 5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -554,6 +581,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -634,6 +664,9 @@ class _HealthState extends State<Health> {
                                                 "A. Strongly Disagree",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (c == 12)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -680,6 +713,9 @@ class _HealthState extends State<Health> {
                                                   "B. Disagree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (c == 5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -727,6 +763,9 @@ class _HealthState extends State<Health> {
                                                   "C. Neither Agree Nor Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                      color: (c == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -774,6 +813,9 @@ class _HealthState extends State<Health> {
                                                   "D. Agree",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (c == -5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -821,6 +863,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (c == -10)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -896,6 +941,9 @@ class _HealthState extends State<Health> {
                                               "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
+                                                color: (d == 3)
+                                            ? Colors.white
+                                            : Colors.black,
                                                   fontSize: 16.0,
                                                   fontWeight: FontWeight.bold),
                                             ),
@@ -935,6 +983,9 @@ class _HealthState extends State<Health> {
                                                 "B. Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (d == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -976,6 +1027,9 @@ class _HealthState extends State<Health> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (d == -4)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1017,6 +1071,9 @@ class _HealthState extends State<Health> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (d == -5)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1063,6 +1120,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1138,6 +1198,9 @@ class _HealthState extends State<Health> {
                                               "A. Strongly Disagree ",
                                               textAlign: TextAlign.left,
                                               style: TextStyle(
+                                                  color: (e == -2)
+                                            ? Colors.white
+                                            : Colors.black,
                                                   fontSize: 16.0,
                                                   fontWeight: FontWeight.bold),
                                             ),
@@ -1182,6 +1245,9 @@ class _HealthState extends State<Health> {
                                                   "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                      color: (e == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1224,6 +1290,9 @@ class _HealthState extends State<Health> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (e == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1265,6 +1334,9 @@ class _HealthState extends State<Health> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (e == 2)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1311,6 +1383,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                      color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1391,6 +1466,9 @@ class _HealthState extends State<Health> {
                                                 "A. Strongly Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                    color: (f == -5)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1437,6 +1515,9 @@ class _HealthState extends State<Health> {
                                                   "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                     color: (f == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1479,6 +1560,9 @@ class _HealthState extends State<Health> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == -1)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1520,6 +1604,9 @@ class _HealthState extends State<Health> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1566,6 +1653,9 @@ class _HealthState extends State<Health> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                      color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
