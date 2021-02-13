@@ -149,17 +149,17 @@ class _GrowState extends State<Grow> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0, left: 15.0, right: 15.0),
+              padding: EdgeInsets.only(top: 10.0, left: 20.0, right: 15.0),
               child: Container(
                 height: 200.0,
                 decoration: BoxDecoration(
-                  // borderRadius: BorderRadius.only(
-                  //   topLeft: Radius.circular(15),
-                  //   topRight: Radius.circular(15),
-                  //   bottomLeft: Radius.circular(15),
-                  //   bottomRight: Radius.circular(15),
-                  // ),
-                  color: Colors.grey[400],
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(15),
+                    topRight: Radius.circular(15),
+                    bottomLeft: Radius.circular(15),
+                    bottomRight: Radius.circular(15),
+                  ),
+                  color: Colors.grey[200],
 
                   boxShadow: [
                     BoxShadow(
