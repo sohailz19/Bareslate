@@ -21,7 +21,7 @@ class _ChatState extends State<Chat> {
             style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.w600,
-                color: Colors.black),
+                color: Color.fromRGBO(80,59,102,1)),
           ),
         ),
       ),

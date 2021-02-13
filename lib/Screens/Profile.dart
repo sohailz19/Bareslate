@@ -60,14 +60,14 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
       body: Container(
         child: Padding(
-          padding: EdgeInsets.only(top: 10.0, left: 0.0),
+          padding: EdgeInsets.only(top: 0.0, left: 0.0),
           child: Column(
             children: [
               Container(
                 height: 110.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5.0),
-                  color: Colors.white,
+                  color: Color.fromRGBO(113,174,169,1),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey,
@@ -97,14 +97,21 @@ class _ProfileState extends State<Profile> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsets.only(top: 30.0, left: 20.0),
-                              child: Text(
-                                "Bare Slate",
-                                style: TextStyle(
-                                  fontSize: 25.0,
-                                ),
-                              ),
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                width: 220,
+                                height: 70,
+                                child: Image.asset('assets/image/logo.png')),
                             ),
+                            // Padding(
+                            //   padding: EdgeInsets.only(top: 30.0, left: 20.0),
+                            //   child: Text(
+                            //     "Bare Slate",
+                            //     style: TextStyle(
+                            //       fontSize: 25.0,
+                            //     ),
+                            //   ),
+                            // ),
                             Column(
                               children: [
                                 Padding(
@@ -118,7 +125,7 @@ class _ProfileState extends State<Profile> {
                                           ? (userdata["data"]["first_name"] +
                                               " " +
                                               userdata["data"]["last_name"])
-                                          : "Loading...",
+                                          : "User",
                                       style: TextStyle(
                                         fontSize: 20.0,
                                       ),
@@ -132,7 +139,7 @@ class _ProfileState extends State<Profile> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsets.only(top: 20.0, left: 0.0, right: 20.0),
+                            EdgeInsets.only(top: 20.0, left: 0.0, right: 5.0),
                         child: RaisedButton(
                           onPressed: () {
                             // (userdata != null)
@@ -154,7 +161,7 @@ class _ProfileState extends State<Profile> {
                           elevation: 0.0,
                           padding: EdgeInsets.only(
                               top: 10.0, right: 5.0, bottom: 10.0, left: 5.0),
-                          color: Colors.white,
+                          color: Color.fromRGBO(80,59,102,1),
                           child: SvgPicture.asset("assets/image/edit.svg"),
                         ),
                       ),
