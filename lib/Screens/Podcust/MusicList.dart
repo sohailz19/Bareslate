@@ -45,7 +45,9 @@ class _MusicListState extends State<MusicList> {
                           borderRadius: BorderRadius.circular(13)),
                       color: Color.fromRGBO(244, 85, 61, 3),
                       onPressed: () {
-                         
+                         const url =
+                              "https://www.youtube.com/channel/UCqxCOyis8dD86d01YqsyAAQ";
+                          _launchURL3(url);
                       },
                       child: Row(
                         children: [
