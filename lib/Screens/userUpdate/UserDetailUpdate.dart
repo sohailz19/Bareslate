@@ -88,13 +88,13 @@ class _UpdateUserDetailState extends State<UpdateUserDetail> {
                     child: Column(
                       children: [
                         Padding(
-                          padding: EdgeInsets.only(top: 10.0),
+                          padding: EdgeInsets.only(top: 20.0),
                           child: Text(
-                            "Update Your Detail Here",
+                            "Update Your Detail",
                             style: TextStyle(
-                                fontSize: 26.0,
-                                fontWeight: FontWeight.w700,
-                                color: Colors.blueGrey[900]),
+                                fontSize: 20.0,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
                           ),
                         ),
                         Padding(

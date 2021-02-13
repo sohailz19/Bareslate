@@ -17,10 +17,11 @@ class _ShopState extends State<Shop> {
           padding: const EdgeInsets.only(left: 15.0),
           child: Text(
             "Shop",
+            
             style: TextStyle(
                 fontSize: 22.0,
                 fontWeight: FontWeight.w600,
-                color: Colors.black),
+                color: Color.fromRGBO(80,59,102,1)),
           ),
         ),
       ),
