@@ -13,7 +13,7 @@ class _ChatState extends State<Chat> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Color.fromRGBO(0, 138, 151, 2),
+        backgroundColor: Color.fromRGBO(113,174,169,1),
         title: Padding(
           padding: const EdgeInsets.only(left: 15.0),
           child: Text(
@@ -43,16 +43,16 @@ class _ChatState extends State<Chat> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 10.0, right: 10),
+            padding: EdgeInsets.only(top: 0.0, right: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    height: 170,
-                    width: 160,
+                    height: 190,
+                    width: 250,
                     child: Image.asset(
                       "assets/image/chat.png",
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                     ))
               ],
             ),
@@ -68,7 +68,7 @@ class _ChatState extends State<Chat> {
                   child: RaisedButton(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10)),
-                    color: Color.fromRGBO(40, 124, 109, 5),
+                    color: Color.fromRGBO(254,154,0,1),
                     onPressed: () {
                       // await LaunchApp.openApp(
                       //   androidPackageName: 'com.Slack',

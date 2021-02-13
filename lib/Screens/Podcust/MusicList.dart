@@ -1,5 +1,7 @@
 import 'package:Bare_Slate/Appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 
 class MusicList extends StatefulWidget {
@@ -43,7 +45,7 @@ class _MusicListState extends State<MusicList> {
                           borderRadius: BorderRadius.circular(13)),
                       color: Color.fromRGBO(244, 85, 61, 3),
                       onPressed: () {
-                        
+                         
                       },
                       child: Row(
                         children: [
@@ -91,7 +93,11 @@ class _MusicListState extends State<MusicList> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(13)),
                       color: Color.fromRGBO(244, 85, 61, 3),
-                      onPressed: () {},
+                      onPressed: () {
+                        const url =
+                              "https://pod.co/ask-more-get-more-podcast";
+                          _launchURL3(url);
+                      },
                       child: Row(
                         children: [
                           Padding(
@@ -137,7 +143,11 @@ class _MusicListState extends State<MusicList> {
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(13)),
                       color: Color.fromRGBO(244, 85, 61, 3),
-                      onPressed: () {},
+                      onPressed: () {
+                        const url =
+                              "https://pod.co/get-more-with-bare-slate";
+                          _launchURL3(url);
+                      },
                       child: Row(
                         children: [
                           Padding(
@@ -177,3 +187,13 @@ class _MusicListState extends State<MusicList> {
     );
   }
 }
+
+_launchURL3(url1) async {
+    var url = url1;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+

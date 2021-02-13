@@ -1,5 +1,7 @@
 import 'package:Bare_Slate/Appbar.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class VideoList extends StatefulWidget {
   @override
@@ -63,7 +65,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -126,7 +132,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -197,7 +207,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -260,7 +274,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -331,7 +349,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -394,7 +416,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -465,7 +491,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=V_Bh4gwk5hg&t=3s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -528,7 +558,11 @@ class _VideoListState extends State<VideoList> {
                         elevation: 5.0,
                         padding: EdgeInsets.only(
                             top: 0.0, left: 0.0, right: 0.0, bottom: 0.0),
-                        onPressed: () {},
+                        onPressed: () {
+                           const url =
+                              "https://www.youtube.com/watch?v=oeKw_W9cWpQ&t=1715s";
+                          _launchURL2(url);
+                        },
                         child: Stack(
                           children: [
                             ClipRRect(
@@ -571,3 +605,12 @@ class _VideoListState extends State<VideoList> {
     );
   }
 }
+
+_launchURL2(url1) async {
+    var url = url1;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }

@@ -15,7 +15,7 @@ class _GrowState extends State<Grow> {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 20.0, left: 15.0),
+              padding: EdgeInsets.only(top: 30.0, left: 15.0),
               child: Row(
                 children: [
                   Text(
@@ -29,7 +29,7 @@ class _GrowState extends State<Grow> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20.0),
+              padding: EdgeInsets.only(top: 25.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -41,7 +41,7 @@ class _GrowState extends State<Grow> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(52,73,97,1),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -60,7 +60,7 @@ class _GrowState extends State<Grow> {
                             "Daily Quote",
                             style: TextStyle(
                               fontSize: 16.0,
-                              color: Colors.white,
+                              color: Color.fromRGBO(250,221,176,1),
                             ),
                           ),
                         ),
@@ -72,7 +72,8 @@ class _GrowState extends State<Grow> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+                            "“Perfect is the enemy of good.” –Voltaire. Don’t worry about doing things perfectly. If you do, you’ll never get...",
+                            textAlign: TextAlign.center,
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -90,7 +91,7 @@ class _GrowState extends State<Grow> {
                         bottomLeft: Radius.circular(15),
                         bottomRight: Radius.circular(15),
                       ),
-                      color: Color.fromRGBO(254, 153, 3, 3),
+                      color: Color.fromRGBO(52,73,97,1),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.white,
@@ -109,7 +110,7 @@ class _GrowState extends State<Grow> {
                             "Daily Quote",
                             style: TextStyle(
                               fontSize: 16.0,
-                              color: Colors.white,
+                              color: Color.fromRGBO(250,221,176,1),
                             ),
                           ),
                         ),
@@ -121,7 +122,8 @@ class _GrowState extends State<Grow> {
                           padding:
                               EdgeInsets.only(top: 5.0, left: 3.0, right: 3.0),
                           child: Text(
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.",
+                            "All is well, right here, right now. This mantra reminds us that no matter how chaotic life can seem. Things are not...",
+                          textAlign: TextAlign.center, 
                             style: TextStyle(
                               fontSize: 16.0,
                               color: Colors.white,
@@ -135,7 +137,7 @@ class _GrowState extends State<Grow> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 20.0, left: 15.0),
+              padding: EdgeInsets.only(top: 30.0, left: 15.0),
               child: Row(
                 children: [
                   Text(
@@ -151,7 +153,7 @@ class _GrowState extends State<Grow> {
             Padding(
               padding: EdgeInsets.only(top: 10.0, left: 20.0, right: 15.0),
               child: Container(
-                height: 200.0,
+                height: 100.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
@@ -173,7 +175,8 @@ class _GrowState extends State<Grow> {
                   padding:
                       const EdgeInsets.only(top: 5.0, left: 5.0, right: 5.0),
                   child: Text(
-                    "I Am a Flutter and react  Developer with more than 2+ year experince in the native app development",
+                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 16.0,
                         color: Colors.black,
