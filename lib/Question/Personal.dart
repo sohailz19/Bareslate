@@ -1470,6 +1470,9 @@ class _PersonalState extends State<Personal> {
                                                 "A. Strongly Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                   color: (f == -5)
+                                            ? Colors.white
+                                            : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1516,6 +1519,9 @@ class _PersonalState extends State<Personal> {
                                                   "B. Disagree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (f == -3)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
@@ -1558,6 +1564,9 @@ class _PersonalState extends State<Personal> {
                                                 "C. Neither Agree Nor Disagree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (f == -1)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1599,6 +1608,9 @@ class _PersonalState extends State<Personal> {
                                                 "D. Agree ",
                                                 textAlign: TextAlign.left,
                                                 style: TextStyle(
+                                                  color: (f == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                     fontSize: 16.0,
                                                     fontWeight:
                                                         FontWeight.bold),
@@ -1645,6 +1657,9 @@ class _PersonalState extends State<Personal> {
                                                   "E. Strongly Agree ",
                                                   textAlign: TextAlign.left,
                                                   style: TextStyle(
+                                                    color: (a == 0)
+                                              ? Colors.white
+                                              : Colors.black,
                                                       fontSize: 16.0,
                                                       fontWeight:
                                                           FontWeight.bold),
